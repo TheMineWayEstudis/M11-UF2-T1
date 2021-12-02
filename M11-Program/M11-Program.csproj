@@ -37,6 +37,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\Menu\Menu.cs" />
+    <Compile Include="Components\Menu\MenuItem.cs" />
+    <Compile Include="Components\Menu\TextMenuItem.cs" />
+    <Compile Include="Components\Screens\Exer7.cs" />
+    <Compile Include="Components\Screens\Exer8.cs" />
+    <Compile Include="Components\Screens\Exer9.cs" />
+    <Compile Include="Components\Screens\IScreen.cs" />
+    <Compile Include="Components\UIBasics.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
