@@ -4,3 +4,4 @@ G:\Repos\M11-UF2-T1\M11-Program\obj\Debug\M11-Program.csproj.AssemblyReference.c
 G:\Repos\M11-UF2-T1\M11-Program\obj\Debug\M11-Program.csproj.CoreCompileInputs.cache
 G:\Repos\M11-UF2-T1\M11-Program\obj\Debug\M11-Program.exe
 G:\Repos\M11-UF2-T1\M11-Program\obj\Debug\M11-Program.pdb
+G:\Repos\M11-UF2-T1\M11-Program\bin\Debug\M11-Program.exe.config
