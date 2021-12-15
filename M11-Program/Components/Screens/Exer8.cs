@@ -15,7 +15,9 @@ namespace M11_Program.Components.Screens
 
             for(int i = 0; i < 10; i++)
             {
-                File.Copy(file.FullName, Directory.GetCurrentDirectory() + $@"\{$"Còpia {i + 1} " + file.Name}");
+                string dir = Directory.GetCurrentDirectory() +$@"\{$"Còpia {i + 1} " + file.Name}";
+                if (File.Exists(dir)) File.Delete(dir);
+                File.Copy(file.FullName, dir);
             }
 
             Console.WriteLine("\nS'ha replicat el fitxer");
