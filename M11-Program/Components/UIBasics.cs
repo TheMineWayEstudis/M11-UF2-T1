@@ -44,15 +44,19 @@ namespace M11_Program.Components
 
         public static FileInfo getFile()
         {
-            string name = readText("Escriu el nom del fitxer (buit per sortir)");
-            if (name == "") return null;
-
-            if(!File.Exists(Directory.GetCurrentDirectory() + @"\" + name))
+            do
             {
-                return null;
-            }
+                string name = readText("Escriu el nom del fitxer (buit per sortir)");
+                if (name == null) return null;
 
-            return new FileInfo(Directory.GetCurrentDirectory() + @"\" + name);
+                if (!File.Exists(Directory.GetCurrentDirectory() + @"\" + name))
+                {
+                    Console.WriteLine($"No s'ha trobat el fitxer {name}");
+                    continue;
+                }
+
+                return new FileInfo(Directory.GetCurrentDirectory() + @"\" + name);
+            } while (true);
         }
 
         public static void pressAnyKey()
